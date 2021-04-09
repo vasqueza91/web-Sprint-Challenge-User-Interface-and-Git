@@ -49,9 +49,25 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
-html, body {
+html, nav .top{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:flex-end;
+    margin:3%;
+    text-decoration: none;
+}
+
+
+nav a{
+    text-decoration: none;
+    color:black;
+}
+
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -102,14 +118,45 @@ p {
 }
 
 .middle-content .boxes .box {
+
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/*Adding different color backgrounds to the boxes*/
+.box:first-child{
+    background:teal;
+}
+.box:nth-child(2){
+    background:gold;
+}
+.box:nth-child(3){
+    background:cadetblue;
+}
+.box:nth-child(4){
+    background:coral;
+}
+.box:nth-child(5){
+    background:crimson;
+}
+.box:nth-child(6){
+    background:forestgreen;
+}
+.box:nth-child(7){
+    background:darkorchid;
+}
+.box:nth-child(8){
+    background:hotpink;
+}
+.box:nth-child(9){
+    background:indigo;
+}
+.box:nth-child(10){
+    background:dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +190,44 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/*About me portion*/
+.hc{
+  
+    display:flex;
+  
+    justify-content: space-evenly;
+    
+}
+.ic1{
+    
+    display:flex;  
+    flex-direction:column;   
+
+
+ 
+    
+    
+    
+
+
+ 
+}
+.ic2{
+    
+ 
+
+
+}
+.ic3{
+    
+   
+
+    
+}
+.ic4{
+    
+    
+
+    
 }
